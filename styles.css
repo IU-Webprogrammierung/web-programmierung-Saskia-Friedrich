@@ -3,3 +3,30 @@
     color: white;
 }
 
+#ueber-mich{
+
+}
+
+#projekte{
+
+}
+
+.kachel {
+    background-image: url("bilder/projekt-1.jpg");
+    width: 300px;
+    height: 200px;
+    float: left;
+    margin-right: 2%;
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+a h3{
+    color:white;
+}
+
+#ueber-mich{
+}
+

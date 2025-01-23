@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio – Saskia Friedrich</title>
     <link rel="icon" type="image/x-icon" href="bilder\favicon.ico">
-    <link rel="stylesheet" href="styles.css">
+ <!--<link rel="stylesheet" href="styles.css">-->
   </head>
 
   <body>
@@ -22,29 +22,39 @@
     </nav> 
   
     <main>
-    <!-- Bild & Beschreibung -->
+      <!-- Bild & Beschreibung -->
       <section>
         <img class="me" src="bilder/saskia.jpg" width="150px" alt="Foto von Saskia Friedrich">
-        <h1>"Design is so simple. That's why it's so complicated." ~ Paul Rand</h1>
-        <h3>Hallo!</h3>
+          <blockquote>
+            <h1>"Design is so simple. That's why it's so complicated." ~ Paul Rand</h1>
+          </blockquote>
+          <h3>Hallo!</h3>
           <p>Mein Name ist Saskia Friedrich, ich bin 26 Jahre alt und gelernte Mediengestalterin Digital und Print im Fachbereich Gestaltung und Technik aus der Nähe von Frankfurt am Main. 
             Aktuell befinde ich mich im vierten Semester meines UX-Design-Studiums.
             Ich freue mich, Ihnen hiermit mein Portfolio präsentieren zu dürfen.
           </p>
-          </main>
+      </section>
 
       <!-- Kacheln mit Links -->
       <section class="kacheln-container">
-          <a href="ueber-mich.html" class="ueber-mich">
-            <h3>Über mich</h3>
-          </a>
-          <a href="projekte.html" class="projekte">
-            <h3>Projekte</h3>
-          </a>
-          <a href="kontakt.html" class="kontakt">
-            <h3>Kontakt</h3>
-          </a>
-        </section>
+        <a href="ueber-mich.html" id="ueber-mich">
+          <section class="kachel">
+              <h3>Über mich</h3>
+          </section>
+        </a>
+
+        <a href="projekte.html"id="projekte">
+          <section class="kachel">
+              <h3>Projekte</h3>
+          </section>
+        </a>
+
+        <a href="kontakt.html" id="kontakt">
+          <section class="kachel">
+              <h3>Kontakt</h3>
+          </section>
+        </a>
+      </section>
     </main>
 
   </body>
