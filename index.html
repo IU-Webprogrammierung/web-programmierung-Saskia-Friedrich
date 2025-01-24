@@ -5,26 +5,30 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio – Saskia Friedrich</title>
-    <link rel="icon" type="image/x-icon" href="bilder\favicon.ico">
+    <link rel="icon" type="image/x-icon" href="bilder/favicon.ico">
  <!--<link rel="stylesheet" href="styles.css">-->
   </head>
 
   <body>
-    <!-- Navigation -->
-    <nav>
-      <ul class="navigation-bar">
-        <li><img class="logo" src="bilder/logo.png" width="50px" alt="Saskia Friedrich Logo"></li>
-        <li><a href="index.html" class="active">Start</a></li>
-        <li><a href="ueber-mich.html">Über mich</a></li>
-        <li><a href="projekte.html">Projekte</a></li>
-        <li><a href="kontakt.html">Kontakt</a></li>
-      </ul>
-    </nav> 
-  
+    <header>
+      <a href="#"><img class="logo" src="bilder/logo.png" width="50" alt="Saskia Friedrich Logo"></a>
+
+      <!-- Navigation -->
+      <nav>
+        <ul class="navigation-bar">
+          <li><a href="#" class="active">Start</a></li>
+          <li><a href="ueber-mich.html">Über mich</a></li>
+          <li><a href="projekte.html">Projekte</a></li>
+        </ul>
+      </nav> 
+
+      <a href="kontakt.html" class="contact-me">Kontaktieren Sie mich</a>
+    </header>
+
     <main>
       <!-- Bild & Beschreibung -->
       <section>
-        <img class="me" src="bilder/saskia.jpg" width="150px" alt="Foto von Saskia Friedrich">
+        <img class="me" src="bilder/saskia.jpg" width="150" alt="Foto von Saskia Friedrich">
           <blockquote>
             <h1>"Design is so simple. That's why it's so complicated." ~ Paul Rand</h1>
           </blockquote>
@@ -36,14 +40,14 @@
       </section>
 
       <!-- Kacheln mit Links -->
-      <section class="kacheln-container">
+      <div class="kacheln-container">
         <a href="ueber-mich.html" id="ueber-mich">
           <section class="kachel">
               <h3>Über mich</h3>
           </section>
         </a>
 
-        <a href="projekte.html"id="projekte">
+        <a href="projekte.html" id="projekte">
           <section class="kachel">
               <h3>Projekte</h3>
           </section>
@@ -54,7 +58,7 @@
               <h3>Kontakt</h3>
           </section>
         </a>
-      </section>
+      </div>
     </main>
 
   </body>
