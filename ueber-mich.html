@@ -18,7 +18,7 @@
       <nav>
         <ul class="navigation-bar">
           <li><a href="index.html">Start</a></li>
-          <li><a href="#" class="active">Über mich</a></li>
+          <li><a href="#" class="active" aria-current="page">Über mich</a></li>
           <li><a href="projekte.html">Projekte</a></li>
           <li><a href="kontakt.html">Kontakt</a></li>
         </ul>
@@ -26,34 +26,40 @@
 
     </header>
 
-    <!-- Überschrift, Skills & Historie -->
+    <!-- Überschrift, Skills & Bild -->
     <main>
-      <section class="ueberschrift">
+      <div class="abschnitt-1">
+        <section class="ueberschrift">
+          <h3>Über mich</h3>
           <h1>Saskia Friedrich</h1>
-      </section>
+        </section>
 
-      <section class="skills-block">
-        <h3>Meine Skills</h3>
-          <ul>
-            <li>Soft Skills: Kommunikation, agiles Arbeiten.
-              <progress class="fortschritt" value="10" max="10"></progress>
-            </li>   
+        <section class="skills-block">
+          <h3>Meine Skills</h3>
+            <ul>
+              <li>Soft Skills: Kommunikation, agiles Arbeiten.
+                <progress class="fortschritt" value="10" max="10"></progress>
+              </li>   
 
-            <li>Design-Tools: Photoshop, Illustrator, Figma etc.
-              <progress class="fortschritt" value="10" max="10"></progress>
-            </li>
+              <li>Design-Tools: Photoshop, Illustrator, Figma etc.
+                <progress class="fortschritt" value="10" max="10"></progress>
+              </li>
 
-            <li>Technische Skills: HTML, CSS, Webdesign.
-              <progress class="fortschritt" value="6" max="10"></progress>
-            </li>
+              <li>Technische Skills: HTML, CSS, Webdesign.
+                <progress class="fortschritt" value="6" max="10"></progress>
+              </li>
 
-            <li>UX-Fähigkeiten: Prototyping, Wireframes, Usability Testing.
-              <progress class="fortschritt" value="4" max="10"></progress>
-            </li>
+              <li>UX-Fähigkeiten: Prototyping, Wireframes, Usability Testing.
+                <progress class="fortschritt" value="4" max="10"></progress>
+              </li>
+            </ul>
+        </section>
 
-          </ul>
-      </section>
+        <img class="logo" src="bilder/saskia.jpg" alt="Saskia Friedrich Logo">
 
+      </div>
+
+    <!-- Zeitleiste -->
       <div class="timeline">
         <div class="container">
           <section class="content">
@@ -68,9 +74,24 @@
           </section>
         </div>
       </div>
-    </main>
-    <footer>
 
+    <!-- Link zu den Projekten -->
+
+      <div class="full-kachel">
+        <a href="projekte.html" id="zudenprojekten">
+          <img src="zudenprojekten.jpg" alt="">
+          <h3>Hier geht es zu meinen Projekten ➝</h3>
+        </a>
+      </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <a href="https://www.instagram.com/uxwithsaskia" target="_blank">Folgen Sie mir auf Instagram</a> |
+      <a href="impressum.html">Impressum</a> |
+      <a href="datenschutz.html">Datenschutzerklärung</a>
+      <p>&copy; 2025 UXwithSaskia</p>
     </footer>
   </body>
 </html>
