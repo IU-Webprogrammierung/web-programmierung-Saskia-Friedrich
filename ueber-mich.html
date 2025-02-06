@@ -1,97 +1,99 @@
 <!DOCTYPE html>
 <html lang="de">
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Über mich – Saskia Friedrich</title>
-    <link rel="icon" type="image/x-icon" href="bilder/favicon.ico">
- <!--<link rel="stylesheet" href="styles.css">-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Über mich – Saskia Friedrich</title>
+  <link rel="icon" type="image/x-icon" href="bilder/favicon.ico">
+  <!--<link rel="stylesheet" href="styles.css">-->
 </head>
 
-  <body>
+<body>
 
-    <header>
-      <a href="index.html"><img class="logo" src="bilder/logo.png" width="50" alt="Saskia Friedrich Logo"></a>
+  <header>
+    <a href="index.html"><img class="logo" src="bilder/logo.png" width="50" alt="Saskia Friedrich Logo"></a>
 
-      <!-- Navigation -->
-      <nav>
-        <ul class="navigation-bar">
-          <li><a href="index.html">Start</a></li>
-          <li><a href="#" class="active" aria-current="page">Über mich</a></li>
-          <li><a href="projekte.html">Projekte</a></li>
-          <li><a href="kontakt.html">Kontakt</a></li>
+    <!-- Navigation -->
+    <nav>
+      <ul class="navigation-bar">
+        <li><a href="index.html">Start</a></li>
+        <li><a href="#" class="active" aria-current="page">Über mich</a></li>
+        <li><a href="projekte.html">Projekte</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <!-- Überschrift, Skills & Bild -->
+  <main>
+    <div class="abschnitt-1">
+      <section class="ueberschrift">
+        <h3>Über mich</h3>
+        <h1>Saskia Friedrich</h1>
+      </section>
+
+      <section class="skills-block">
+        <h3>Meine Skills</h3>
+        <ul>
+          <li>Soft Skills: Kommunikation, agiles Arbeiten.
+            <progress class="fortschritt" value="10" max="10"></progress>
+          </li>
+
+          <li>Design-Tools: Photoshop, Illustrator, Figma etc.
+            <progress class="fortschritt" value="10" max="10"></progress>
+          </li>
+
+          <li>Technische Skills: HTML, CSS, Webdesign.
+            <progress class="fortschritt" value="6" max="10"></progress>
+          </li>
+
+          <li>UX-Fähigkeiten: Prototyping, Wireframes, Usability Testing.
+            <progress class="fortschritt" value="4" max="10"></progress>
+          </li>
         </ul>
-      </nav>
+      </section>
 
-    </header>
+      <img class="logo" src="bilder/saskia.jpg" width="150" alt="Saskia Friedrich Logo">
 
-    <!-- Überschrift, Skills & Bild -->
-    <main>
-      <div class="abschnitt-1">
-        <section class="ueberschrift">
-          <h3>Über mich</h3>
-          <h1>Saskia Friedrich</h1>
-        </section>
-
-        <section class="skills-block">
-          <h3>Meine Skills</h3>
-            <ul>
-              <li>Soft Skills: Kommunikation, agiles Arbeiten.
-                <progress class="fortschritt" value="10" max="10"></progress>
-              </li>   
-
-              <li>Design-Tools: Photoshop, Illustrator, Figma etc.
-                <progress class="fortschritt" value="10" max="10"></progress>
-              </li>
-
-              <li>Technische Skills: HTML, CSS, Webdesign.
-                <progress class="fortschritt" value="6" max="10"></progress>
-              </li>
-
-              <li>UX-Fähigkeiten: Prototyping, Wireframes, Usability Testing.
-                <progress class="fortschritt" value="4" max="10"></progress>
-              </li>
-            </ul>
-        </section>
-
-        <img class="logo" src="bilder/saskia.jpg" width="150" alt="Saskia Friedrich Logo">
-
-      </div>
+    </div>
 
     <!-- Zeitleiste -->
-      <div class="timeline">
-        <div class="container">
-          <section class="content">
-            <h2>04/2023 bis heute</h2>
-            <p>Mediengestalterin bei Butter und Brot Werbeagentur, 63263 Neu-Isenburg</p>
-          </section>
-        </div>
-        <div class="container">
-          <section class="content">
-            <h2>08/2020 bis 02/2023</h2>
-            <p>Ausbildung Mediengestalerin Digital und Print (Gestaltung und Technik) bei Baum und Garten, 60486 Frankfurt am Main</p>
-          </section>
-        </div>
+    <div class="timeline">
+      <div class="container">
+        <section class="content">
+          <h2>04/2023 bis heute</h2>
+          <p>Mediengestalterin bei Butter und Brot Werbeagentur, 63263 Neu-Isenburg</p>
+        </section>
       </div>
+      <div class="container">
+        <section class="content">
+          <h2>08/2020 bis 02/2023</h2>
+          <p>Ausbildung Mediengestalerin Digital und Print (Gestaltung und Technik) bei Baum und Garten, 60486 Frankfurt
+            am Main</p>
+        </section>
+      </div>
+    </div>
 
     <!-- Link zu den Projekten -->
 
-      <div class="full-kachel">
-        <a href="projekte.html" id="zudenprojekten">
-          <img src="zudenprojekten.jpg" alt="">
-          <h3>Hier geht es zu meinen Projekten ➝</h3>
-        </a>
-      </div>
+    <div class="full-kachel">
+      <a href="projekte.html" id="zudenprojekten" aria-label="gehe zur Projektseite">
+        <img src="zudenprojekten.jpg" alt="">
+        <h3>Hier geht es zu meinen Projekten ➝</h3>
+      </a>
+    </div>
 
-    </main>
+  </main>
 
-    <!-- Footer -->
-    <footer>
-      <a href="https://www.instagram.com/uxwithsaskia" target="_blank">Folgen Sie mir auf Instagram</a> |
-      <a href="impressum.html">Impressum</a> |
-      <a href="datenschutz.html">Datenschutzerklärung</a>
-      <p>&copy; 2025 UXwithSaskia</p>
-    </footer>
-  </body>
+  <!-- Footer -->
+  <footer>
+    <a href="https://www.instagram.com/uxwithsaskia" aria-label="gehe zu UXwithSaskia auf Instagram" target="_blank">Folgen Sie mir auf Instagram</a> |
+    <a href="impressum.html">Impressum</a> |
+    <a href="datenschutz.html">Datenschutzerklärung</a>
+    <p>&copy; 2025 UXwithSaskia</p>
+  </footer>
+</body>
+
 </html>
