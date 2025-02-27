@@ -33,14 +33,17 @@ nav li a {
     color: white;
     font-weight: bold;
     text-decoration: none;
-    vertical-align: middle;
-    float: left;
-    padding: 8px;
+    margin-right: 2rem;
+    padding: 0.5rem;
+    transition: 0.5s;
 }
 
-nav li img{
-    vertical-align: middle;
+nav li a:hover{
+    color: #09a382;
+    background-color: white;
+    border-radius: 5px;
 }
+
 
 nav .right{
     float: right
