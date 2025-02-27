@@ -1,8 +1,24 @@
 body {
     font-family: quicksand, Helvetica, sans-serif;
     margin: 0;
-    background: #f3fffd;
+    background: #fdfaff;
+}
 
+h1,
+h2,
+h3,
+h4 {
+    font-family: shrikhand, Helvetica, sans-serif;
+    margin: 0;
+    font-weight: lighter;
+}
+
+h1 {
+    font-size: 50pt;
+}
+
+p {
+    font-size: 14pt;
 }
 
 nav {
@@ -30,43 +46,53 @@ nav li a {
     font-weight: bold;
     text-decoration: none;
     margin-right: 2rem;
-    padding: 0.5rem;
+    padding: 0.5rem 0.8rem;
     transition: 0.5s;
 }
 
 nav li a:hover {
-    color: rgb(215, 210, 238);
-    ;
+    color: rgb(100, 93, 129);
     background-color: white;
     border-radius: 5px;
 }
 
+.active {
+    background-color: white;
+    color: rgb(100, 93, 129);
+    border-radius: 5px;
+}
+
+
+
 .home-header {
-    padding: 20px;
+    padding: 3rem 20rem;
     background-color: rgb(100, 93, 129);
     color: white;
     display: flex;
     align-items: center;
-    column-gap: 50px;
+    column-gap: 50px; 
 }
 
-p{
-    padding-bottom: 10px;
-}
+
 
 .mask {
     mask-image: url(bilder/mask.svg);
     mask-repeat: no-repeat;
     width: 30%;
     height: auto;
-    background-color: beige;
+    background-color: #fdfaff;
 }
 
-.button {
+.vorstellung-start{
+
+}
+
+.ueber-mich-button {
     background-color: white;
     border-radius: 5px;
-    padding: 0.5rem 1rem;
     text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
 }
 
 .button:hover {
@@ -76,17 +102,42 @@ p{
 
 }
 
-main {
+main {}
 
-    padding: 20px;
+
+
+.quote {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    color: rgb(100, 93, 129);
+    text-align: center;
 }
+
+.quote p{
+    padding-top: 20px;
+    margin:0;
+}
+
+.kacheln-container {
+    background-color: rgb(100, 93, 129);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.kachel{
+    color:white;
+    text-decoration: none;
+    padding: 5rem 5rem;
+}
+
+
 
 
 /* 
-.active {
-    background-color: darkolivegreen;
-    color: white;
-}
+
 
 .kachel {
     background-image: url("bilder/projekt-1.jpg");
