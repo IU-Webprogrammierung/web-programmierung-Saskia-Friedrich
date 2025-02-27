@@ -26,6 +26,10 @@ a {
     font-size: 14pt;
 }
 
+a {
+    display: inline-block;
+}
+
 nav {
     display: flex;
     align-items: center;
@@ -71,17 +75,12 @@ nav li a:hover {
 }
 
 .home-header {
-    padding: 3rem 18rem;
+    padding: 3rem 20rem;
     background-color: rgb(100, 93, 129);
     color: white;
     display: flex;
     align-items: center;
     column-gap: 50px;
-}
-
-.home-header p{
-    padding:0;
-    margin:0;
 }
 
 .mask {
@@ -98,15 +97,13 @@ nav li a:hover {
     font-weight: bold;
     border-radius: 5px;
     padding: 0.5rem 1rem;
-    transition: 0.5s;
-    margin-top:20px;
+    transition: 0.2s;
 }
 
 .ueber-mich-button:hover {
-    color: white;
-    border: solid white 2px;
-    background-color: rgb(100, 93, 129);
-
+    border-radius: 5px;
+    transform: scale(0.95);
+    background-color: #e6e6e6;
 }
 
 .quote {
