@@ -17,7 +17,11 @@ h1 {
     font-size: 50pt;
 }
 
-p {
+h3 {
+    font-size: 20pt;
+}
+
+p, a{
     font-size: 14pt;
 }
 
@@ -28,6 +32,8 @@ nav {
     overflow: hidden;
     background-color: #494949;
     position: sticky;
+    top: 0;
+    z-index: 100;
     padding: 0.2rem 3rem;
 }
 
@@ -70,7 +76,7 @@ nav li a:hover {
     color: white;
     display: flex;
     align-items: center;
-    column-gap: 50px; 
+    column-gap: 50px;
 }
 
 
@@ -81,10 +87,6 @@ nav li a:hover {
     width: 30%;
     height: auto;
     background-color: #fdfaff;
-}
-
-.vorstellung-start{
-
 }
 
 .ueber-mich-button {
@@ -102,10 +104,6 @@ nav li a:hover {
 
 }
 
-main {}
-
-
-
 .quote {
     display: flex;
     align-items: center;
@@ -113,11 +111,12 @@ main {}
     overflow: hidden;
     color: rgb(100, 93, 129);
     text-align: center;
+    margin: 20px;
 }
 
-.quote p{
+.quote p {
     padding-top: 20px;
-    margin:0;
+    margin: 0;
 }
 
 .kacheln-container {
@@ -127,8 +126,8 @@ main {}
     justify-content: space-between;
 }
 
-.kachel{
-    color:white;
+.kachel {
+    color: white;
     text-decoration: none;
     padding: 10rem 5rem;
     flex: auto;
@@ -138,15 +137,15 @@ main {}
     position: relative;
 }
 
-#ueber-mich.kachel{
+#ueber-mich.kachel {
     background-image: url(bilder/hintergrund_start.jpg);
 }
 
-#projekte.kachel{
+#projekte.kachel {
     background-image: url(bilder/hintergrund_start.jpg);
 }
 
-#kontakt.kachel{
+#kontakt.kachel {
     background-image: url(bilder/hintergrund_start.jpg);
 }
 
@@ -157,24 +156,32 @@ main {}
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-  }
-
-/* 
-
-
-.kachel {
-    background-image: url("bilder/projekt-1.jpg");
-    width: 300px;
-    height: 200px;
-    float: left;
-    margin-right: 2%;
-    padding: 2%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-a h3 {
+footer{
+    background-color: #494949;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    row-gap: 30px;
     color: white;
 }
-*/
+
+.impressum-datenschutz a{
+padding: 20px;
+}
+
+footer a{
+    color: white;
+    text-decoration:none;
+}
+
+footer p{
+    margin:0;
+}
+
+.instagram-mit-icon img {
+    vertical-align:text-bottom;
+}
