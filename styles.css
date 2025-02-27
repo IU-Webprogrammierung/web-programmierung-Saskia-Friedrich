@@ -5,26 +5,22 @@ body {
 
 }
 
-.home-header{
-    padding: 20px;
-}
-
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     overflow: hidden;
-    background-color: #09a382;
+    background-color: #494949;
     position: sticky;
     padding: 0.2rem 3rem;
 }
 
-.logo{
+.logo {
     height: 80px;
     width: auto;
 }
 
-li{
+li {
     list-style: none;
     display: inline-flex;
 }
@@ -38,18 +34,49 @@ nav li a {
     transition: 0.5s;
 }
 
-nav li a:hover{
-    color: #09a382;
+nav li a:hover {
+    color: rgb(215, 210, 238);
+    ;
     background-color: white;
     border-radius: 5px;
 }
 
-
-nav .right{
-    float: right
+.home-header {
+    padding: 20px;
+    background-color: rgb(100, 93, 129);
+    color: white;
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
 }
 
-main{
+p{
+    padding-bottom: 10px;
+}
+
+.mask {
+    mask-image: url(bilder/mask.svg);
+    mask-repeat: no-repeat;
+    width: 30%;
+    height: auto;
+    background-color: beige;
+}
+
+.button {
+    background-color: white;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+}
+
+.button:hover {
+    color: white;
+    border: solid white 2px;
+    background-color: rgb(100, 93, 129);
+
+}
+
+main {
 
     padding: 20px;
 }
