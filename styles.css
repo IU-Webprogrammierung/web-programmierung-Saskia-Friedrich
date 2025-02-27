@@ -130,11 +130,34 @@ main {}
 .kachel{
     color:white;
     text-decoration: none;
-    padding: 5rem 5rem;
+    padding: 10rem 5rem;
+    flex: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 
+#ueber-mich.kachel{
+    background-image: url(bilder/hintergrund_start.jpg);
+}
 
+#projekte.kachel{
+    background-image: url(bilder/hintergrund_start.jpg);
+}
 
+#kontakt.kachel{
+    background-image: url(bilder/hintergrund_start.jpg);
+}
+
+.kachel h3 {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
 
 /* 
 
