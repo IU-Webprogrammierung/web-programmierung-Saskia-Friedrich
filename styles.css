@@ -21,7 +21,8 @@ h3 {
     font-size: 20pt;
 }
 
-p, a{
+p,
+a {
     font-size: 14pt;
 }
 
@@ -50,6 +51,7 @@ li {
 nav li a {
     color: white;
     font-weight: bold;
+    border-radius: 5px;
     text-decoration: none;
     margin-right: 2rem;
     padding: 0.5rem 0.8rem;
@@ -68,10 +70,8 @@ nav li a:hover {
     border-radius: 5px;
 }
 
-
-
 .home-header {
-    padding: 3rem 20rem;
+    padding: 3rem 18rem;
     background-color: rgb(100, 93, 129);
     color: white;
     display: flex;
@@ -79,7 +79,10 @@ nav li a:hover {
     column-gap: 50px;
 }
 
-
+.home-header p{
+    padding:0;
+    margin:0;
+}
 
 .mask {
     mask-image: url(bilder/mask.svg);
@@ -91,13 +94,15 @@ nav li a:hover {
 
 .ueber-mich-button {
     background-color: white;
-    border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
+    border-radius: 5px;
     padding: 0.5rem 1rem;
+    transition: 0.5s;
+    margin-top:20px;
 }
 
-.button:hover {
+.ueber-mich-button:hover {
     color: white;
     border: solid white 2px;
     background-color: rgb(100, 93, 129);
@@ -135,18 +140,20 @@ nav li a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    background-blend-mode: multiply;
+
 }
 
 #ueber-mich.kachel {
-    background-image: url(bilder/hintergrund_start.jpg);
+    background-image: url(bilder/uebermich-kachel.jpg);
 }
 
 #projekte.kachel {
-    background-image: url(bilder/hintergrund_start.jpg);
+    background-image: url(bilder/projekte-kachel.jpg);
 }
 
 #kontakt.kachel {
-    background-image: url(bilder/hintergrund_start.jpg);
+    background-image: url(bilder/kontakt-kachel.jpg);
 }
 
 .kachel h3 {
@@ -158,9 +165,9 @@ nav li a:hover {
     color: white;
 }
 
-footer{
+footer {
     background-color: #494949;
-    padding: 2rem;
+    padding: 4rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -169,19 +176,23 @@ footer{
     color: white;
 }
 
-.impressum-datenschutz a{
-padding: 20px;
+.impressum-datenschutz a {
+    padding: 20px;
 }
 
-footer a{
+footer a {
     color: white;
-    text-decoration:none;
+    text-decoration: none;
 }
 
-footer p{
-    margin:0;
+footer p {
+    margin: 0;
+}
+
+.instagram-mit-icon {
+    font-weight: bold;
 }
 
 .instagram-mit-icon img {
-    vertical-align:text-bottom;
+    vertical-align: text-bottom;
 }
