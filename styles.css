@@ -198,11 +198,11 @@ footer p {
 
 /*ÜBER MICH*/
 
-.uebermich-header{
+.uebermich-header {
     background-color: rgb(100, 93, 129);
     color: white;
     display: flex;
-    align-items:end;
+    align-items: end;
     justify-content: center;
     column-gap: 50px;
     padding: 2% 5% 0 5%;
@@ -210,8 +210,8 @@ footer p {
 
 .uebermich-header .logo {
     height: 500px;
-    padding:0;
-    margin:0;
+    padding: 0;
+    margin: 0;
 }
 
 .uebermich-abschnitt {
@@ -221,7 +221,7 @@ footer p {
 
 .uebermich-header ul {
     margin-top: 20px;
-    padding:0;
+    padding: 0;
 }
 
 .uebermich-header li {
@@ -231,16 +231,16 @@ footer p {
     padding: 0;
 }
 
-.skills-block li > * {
+.skills-block li>* {
     display: block;
 }
 
-.fortschritt{
+.fortschritt {
     accent-color: rgb(234, 228, 255);
     margin-top: 8px;
-      }
+}
 
-.timeline-area{
+.timeline-area {
     margin: 60px auto;
     width: 50%;
     border-left: 2px solid rgb(100, 93, 129);
@@ -248,17 +248,17 @@ footer p {
     color: rgb(100, 93, 129);
 }
 
-.timeline-item{
-    padding: 20px 20px; 
+.timeline-item {
+    padding: 20px 20px;
     position: relative;
 }
 
-.timeline-item:before{
-    content:'';
-    display:block;
+.timeline-item:before {
+    content: '';
+    display: block;
     width: 10px;
     height: 10px;
-    border-radius:50%;
+    border-radius: 50%;
     background-color: rgb(234, 228, 255);
     border: 3px solid rgb(100, 93, 129);
     position: absolute;
@@ -267,30 +267,104 @@ footer p {
 
 }
 
-.kachel-zu-projekte{
-        color: white;
-        padding: 10rem 5rem;
-        flex: auto;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: relative;
-        background-image: url(bilder/projekte-kachel.jpg);
-    }
+.kachel-zu-projekte {
+    color: white;
+    padding: 10rem 5rem;
+    flex: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-image: url(bilder/projekte-kachel.jpg);
+}
 
-    .kachel-zu-projekte a{
-        color: white;
-        text-decoration: none;
-    }
+.kachel-zu-projekte a {
+    color: white;
+    text-decoration: none;
+}
 
-    .kachel-zu-projekte h3 {
-        text-align: center;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: white;
-    }
+.kachel-zu-projekte h3 {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+
+
+/*PROJEKTE*/
+
+
+.projekte-container{
+    display: flex;
+    flex-direction: column;
+    padding: 1% 0;
+    margin: 0 5%;
+}
+
+.projekte-container h1{
+    color: rgb(100, 93, 129);
+    padding: 1% 0;
+}
+
+.projekte-container img{
+    height: 500px;
+    width: 500px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+.projekte-container ul{
+    padding:0;
+}
+
+#projekt-1, #projekt-2, #projekt-3{
+    background-color: rgb(100, 93, 129);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+    border-radius: 15px;
+}
+
+
+.text-projekt{
+    padding: 20px 100px 20px 10px;
+}
+
+.skill-label{
+    background-color: #fdfaff;
+    color: rgb(100, 93, 129);
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-right: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.kachel-zu-kontakt{
+    color: white;
+    padding: 10rem 5rem;
+    text-align: center;
+    flex: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-image: url(bilder/kontakt-kachel.jpg);
+}
+
+.kachel-zu-kontakt a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
 
 
 /*RESPONSIVITÄT*/
@@ -298,6 +372,11 @@ footer p {
 /*Startseite*/
 
 @media(max-width: 768px) {
+    h1 {
+        font-size: 50px;
+        line-height: 55px;
+    }
+
     .home-header {
         padding: 2rem;
         flex-direction: column;
@@ -318,6 +397,14 @@ footer p {
         flex-direction: column;
         align-items: normal;
     }
+
+    footer {
+        background-color: #494949;
+        flex-direction: column;
+        text-align: center;
+        color: white;
+    }
+
 }
 
 
@@ -325,7 +412,7 @@ footer p {
 /*Über mich*/
 
 @media(max-width: 768px) {
-    .uebermich-header{
+    .uebermich-header {
         padding: 2rem 2rem 0 2rem;
         flex-direction: column;
         text-align: center;
@@ -334,19 +421,66 @@ footer p {
     .skills-block li {
         display: flex;
         flex-direction: column;
-        align-items: center; 
-      }
+        align-items: center;
+    }
 
     .uebermich-header .logo {
         height: 300px;
-        margin:0 auto;
+        margin: 0 auto;
     }
 
-    .timeline-area{
+    .timeline-area {
         width: 70%;
     }
 
 }
+
+/*Projekte*/
+
+@media(max-width: 768px) {
+    .projekte-container {
+        padding: 2rem;
+        flex-direction: column;
+    }
+
+    .projekte-container h1{
+        color: rgb(100, 93, 129);
+        padding-bottom: 20px;
+    }
+    
+    .projekte-container img{
+        display: block;
+        margin: 22px auto 0 auto;
+        height: 90%;
+        width:90%;
+        object-fit: cover;
+        border-radius: 15px;
+        text-align: center;
+
+    }
+    
+    .projekte-container ul{
+        padding:0;
+    }
+    
+    #projekt-1, #projekt-2, #projekt-3{
+        background-color: rgb(100, 93, 129);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+        border-radius: 15px;
+    }
+    
+    
+    .text-projekt{
+        padding: 20px;
+    }
+
+}
+
+
+
 /*
 
 */
