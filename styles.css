@@ -71,7 +71,8 @@ nav li a:hover {
 }
 
 .home-header {
-    padding: 3rem 20rem;
+    /*padding: 3rem 20rem;*/
+    padding: 5% 20%;
     background-color: rgb(100, 93, 129);
     color: white;
     display: flex;
@@ -82,7 +83,7 @@ nav li a:hover {
 .mask {
     mask-image: url(bilder/mask.svg);
     mask-repeat: no-repeat;
-    width: 30%;
+    width: 300px;
     height: auto;
     background-color: #fdfaff;
 }
@@ -191,37 +192,36 @@ footer p {
 }
 
 
+/*RESPONSIVITÄT*/
 
-/*RESPONSIVITÄT
 
-@media (max-width: 768px) {
+@media(max-width: 768px){
     .home-header {
         padding: 2rem;
         flex-direction: column;
         text-align: center;
     }
+
     .mask {
         width: 50%;
     }
-    .ueber-mich-button {
-        margin-top: 1rem;
+
+    .ueber-mich-button:active {
+        border-radius: 5px;
+        transform: scale(0.95);
+        background-color: #e6e6e6;
     }
-    .navigation-bar {
-        display: none;
-        flex-direction: column;
-        align-items: center;
-    }
-    .burger-menu {
-        display: block;
-    }
-    nav {
-        flex-direction: column;
-        align-items: center;
-    }
+
     .kacheln-container {
         flex-direction: column;
-        width: 100%;
+        align-items: normal;
     }
+}
+
+
+/*
+
+    
 }
 
 @media (max-width: 480px) {
