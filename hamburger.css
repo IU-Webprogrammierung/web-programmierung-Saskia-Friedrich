@@ -1,7 +1,4 @@
-body {
-    height: 100vh;
-    padding-top: 90px;
-}
+
 
 .burger-menu {
     position: fixed;
@@ -67,6 +64,10 @@ body {
 }
 
 @media(max-width:801px) {
+    body {
+        height: 100vh;
+        padding-top: 90px;
+    }
     nav {
         display: none;
     }
