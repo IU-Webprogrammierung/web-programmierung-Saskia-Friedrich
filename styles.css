@@ -26,10 +26,6 @@ a {
     font-size: 14pt;
 }
 
-a {
-    display: inline-block;
-}
-
 nav {
     display: flex;
     align-items: center;
@@ -98,6 +94,8 @@ nav li a:hover {
     border-radius: 5px;
     padding: 0.5rem 1rem;
     transition: 0.2s;
+    display: inline-block;
+    color: rgb(100, 93, 129);
 }
 
 .ueber-mich-button:hover {
@@ -137,8 +135,6 @@ nav li a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    background-blend-mode: multiply;
-
 }
 
 #ueber-mich.kachel {
@@ -193,3 +189,56 @@ footer p {
 .instagram-mit-icon img {
     vertical-align: text-bottom;
 }
+
+
+
+/*RESPONSIVITÄT
+
+@media (max-width: 768px) {
+    .home-header {
+        padding: 2rem;
+        flex-direction: column;
+        text-align: center;
+    }
+    .mask {
+        width: 50%;
+    }
+    .ueber-mich-button {
+        margin-top: 1rem;
+    }
+    .navigation-bar {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+    .burger-menu {
+        display: block;
+    }
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    .kacheln-container {
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 30pt;
+    }
+    .mask {
+        width: 80%;
+    }
+    .home-header {
+        padding: 1rem;
+    }
+    .ueber-mich-button {
+        font-size: 12pt;
+    }
+    .kacheln-container {
+        flex-direction: column;
+    }
+}
+*/
