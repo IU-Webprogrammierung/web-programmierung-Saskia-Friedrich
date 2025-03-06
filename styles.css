@@ -297,19 +297,19 @@ footer p {
 /*PROJEKTE*/
 
 
-.projekte-container{
+.projekte-container {
     display: flex;
     flex-direction: column;
     padding: 1% 0;
 }
 
-.projekte-container h1{
+.projekte-container h1 {
     color: rgb(100, 93, 129);
     padding: 1% 0;
     text-align: center;
 }
 
-.projekte-container img{
+.projekte-container img {
     height: 500px;
     width: 500px;
     object-fit: cover;
@@ -317,11 +317,13 @@ footer p {
     margin: 20px;
 }
 
-.projekte-container ul{
-    padding:0;
+.projekte-container ul {
+    padding: 0;
 }
 
-#projekt-1, #projekt-2, #projekt-3{
+#projekt-1,
+#projekt-2,
+#projekt-3 {
     background-color: rgb(100, 93, 129);
     color: white;
     display: flex;
@@ -331,11 +333,11 @@ footer p {
 }
 
 
-.text-projekt{
+.text-projekt {
     padding: 20px 100px 20px 10px;
 }
 
-.skill-label{
+.skill-label {
     background-color: #fdfaff;
     color: rgb(100, 93, 129);
     border-radius: 5px;
@@ -345,7 +347,7 @@ footer p {
     font-weight: bold;
 }
 
-.kachel-zu-kontakt{
+.kachel-zu-kontakt {
     color: white;
     padding: 10rem 5rem;
     text-align: center;
@@ -364,23 +366,10 @@ footer p {
 
 /*KONTAKT*/
 
-.kontakt-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2% 5%;
-    color: rgb(100, 93, 129);
-    text-align: center;
-}
-
-.kontakt-container h1 {
-    margin-bottom: 20px;
-}
-
 .kontaktformular {
     width: 100%;
     max-width: 600px;
-    background: #f9f9f9;
+    background: rgb(100, 93, 129);
     padding: 20px 30px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -388,6 +377,20 @@ footer p {
     flex-direction: column;
     gap: 15px;
     margin-bottom: 30px;
+}
+
+.kontakt-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2% 5%;
+    color: white;
+    text-align: center;
+}
+
+.kontakt-container h1 {
+    color: rgb(100, 93, 129);
+    margin-bottom: 20px;
 }
 
 .vor-nachname {
@@ -420,13 +423,9 @@ footer p {
     font-size: 16px;
 }
 
-.kontaktformular textarea {
-    resize: vertical;
-}
-
 .kontaktformular button {
-    background: rgb(100, 93, 129);
-    color: white;
+    background: white;
+    color: rgb(100, 93, 129);
     font-size: 16px;
     padding: 10px 25px;
     border: none;
@@ -437,10 +436,11 @@ footer p {
     margin: 10px auto 0;
     display: block;
     text-align: center;
+    font-weight: bold;
 }
 
 .kontaktformular button:hover {
-    background: rgb(80, 73, 110);
+    background: rgb(220, 217, 235);
 }
 
 .kontakt-container a {
@@ -456,7 +456,12 @@ footer p {
     width: 24px;
     height: 24px;
 }
-    
+
+.kontaktdaten a{
+    text-align: left;
+    padding-bottom: 20px;
+}
+
 
 
 
@@ -467,145 +472,156 @@ footer p {
 /*Allgemein*/
 
 @media(max-width: 768px) {
-    a{
+    a {
         -webkit-tap-highlight-color: transparent;
     }
-
-
-/*Startseite*/
-
-@media(max-width: 768px) {
-    h1 {
-        font-size: 45px;
-        line-height: 55px;
-    }
-
-    .home-header {
-        padding: 2rem;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .mask {
-        width: 70%;
-        padding-bottom: 30px;
-    }
-
-    .ueber-mich-button:active {
-        border-radius: 5px;
-        transform: scale(0.95);
-        background-color: #e6e6e6;
-    }
-
-    .kacheln-container {
-        flex-direction: column;
-        align-items: normal;
-    }
-
-    footer {
-        background-color: #494949;
-        flex-direction: column;
-        text-align: center;
-        color: white;
-    }
-
 }
 
+    /*Startseite*/
 
+    @media(max-width: 768px) {
+        h1 {
+            font-size: 45px;
+            line-height: 55px;
+        }
 
-/*Über mich*/
+        .home-header {
+            padding: 2rem;
+            flex-direction: column;
+            text-align: center;
+        }
 
-@media(max-width: 768px) {
-    .uebermich-header {
-        padding: 2rem 2rem 0 2rem;
-        display:block;
-        text-align: center;
-    }
+        .mask {
+            width: 70%;
+            padding-bottom: 30px;
+        }
 
-    .skills-block li {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+        .ueber-mich-button:active {
+            border-radius: 5px;
+            transform: scale(0.95);
+            background-color: #e6e6e6;
+        }
 
-    .uebermich-header .logo {
-        height: 300px;
-        margin: 0 auto;
-    }
+        .kacheln-container {
+            flex-direction: column;
+            align-items: normal;
+        }
 
-    .timeline-area {
-        width: 70%;
-    }
-
-}
-
-/*Projekte*/
-
-@media(max-width: 768px) {
-    .projekte-container {
-        padding: 2rem;
-        flex-direction: column;
-    }
-
-    .projekte-container h1{
-        color: rgb(100, 93, 129);
-        padding-bottom: 20px;
-    }
-    
-    .projekte-container img{
-        display: block;
-        margin: 22px auto 0 auto;
-        height: 90%;
-        width:90%;
-        object-fit: cover;
-        border-radius: 15px;
-        text-align: center;
+        footer {
+            background-color: #494949;
+            flex-direction: column;
+            text-align: center;
+            color: white;
+        }
 
     }
-    
-    .projekte-container ul{
-        padding:0;
-    }
-    
-    #projekt-1, #projekt-2, #projekt-3{
-        background-color: rgb(100, 93, 129);
-        color: white;
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 30px;
-        border-radius: 15px;
-    }
-    
-    
-    .text-projekt{
-        padding: 20px;
-    }
-
-}
 
 
-/*Kontakt*/
 
-@media (max-width: 768px) {
-    .kontaktformular {
-        max-width: 70%;
-        padding: 20px 50px 20px 30px;
-    }
+    /*Über mich*/
 
-    .kontakt-container h1 {
-        padding-top: 30px;
+    @media(max-width: 768px) {
+        .uebermich-header {
+            padding: 2rem 2rem 0 2rem;
+            display: block;
+            text-align: center;
+        }
+
+        .skills-block li {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .uebermich-header .logo {
+            height: 300px;
+            margin: 0 auto;
+        }
+
+        .timeline-area {
+            width: 70%;
+        }
+
     }
 
-    .vor-nachname {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
+    /*Projekte*/
+
+    @media(max-width: 768px) {
+        .projekte-container {
+            padding: 2rem;
+            flex-direction: column;
+        }
+
+        .projekte-container h1 {
+            color: rgb(100, 93, 129);
+            padding-bottom: 20px;
+        }
+
+        .projekte-container img {
+            display: block;
+            margin: 22px auto 0 auto;
+            height: 90%;
+            width: 90%;
+            object-fit: cover;
+            border-radius: 15px;
+            text-align: center;
+
+        }
+
+        .projekte-container ul {
+            padding: 0;
+        }
+
+        #projekt-1,
+        #projekt-2,
+        #projekt-3 {
+            background-color: rgb(100, 93, 129);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 30px;
+            border-radius: 15px;
+        }
+
+
+        .text-projekt {
+            padding: 20px;
+        }
+
+        .kachel-zu-kontakt{
+            padding: 2
+        }
+
     }
 
-    .vor-nachname label {
-        width: 100%;
-    }
-}
-/*
 
-*/
+    /*Kontakt*/
+
+    @media (max-width: 768px) {
+        .kontaktformular {
+            max-width: 80%;
+            padding: 20px 50px 20px 30px;
+        }
+
+        .kontaktformular button {
+            padding: 2% 3%;
+        }
+
+        .kontakt-container h1 {
+            padding-top: 30px;
+        }
+
+        .vor-nachname {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .vor-nachname label {
+            width: 100%;
+        }
+
+        .kontaktdaten a{
+            font-size: 12pt;
+        }
+    }
