@@ -204,12 +204,13 @@ footer p {
     display: flex;
     align-items: end;
     justify-content: center;
-    column-gap: 50px;
+    column-gap: 1%;
     padding: 2% 5% 0 5%;
 }
 
-.uebermich-header .logo {
-    height: 500px;
+.uebermich-header .portrait {
+    width: 50%;
+    height: auto;
     padding: 0;
     margin: 0;
 }
@@ -533,8 +534,9 @@ footer p {
         align-items: center;
     }
 
-    .uebermich-header .logo {
-        height: 300px;
+    .uebermich-header .portrait {
+        width: 50%;
+        height: auto;
         margin: 0 auto;
     }
 
