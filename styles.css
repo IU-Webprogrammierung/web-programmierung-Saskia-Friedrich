@@ -362,12 +362,145 @@ footer p {
     text-decoration: none;
 }
 
+/*KONTAKT
+.kontakt-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1% 0;
+    margin: 0 5%;
+    color: rgb(100, 93, 129);}
 
+.kontaktformular{
+    padding: 2% 30%;
+    display: flex;
+    flex-direction: column;*/
+
+
+    .kontakt-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2% 5%;
+        color: rgb(100, 93, 129);
+        text-align: center;
+    }
+    
+    .kontakt-container h1 {
+        margin-bottom: 20px;
+    }
+    
+    /* Breiteres Formular */
+    .kontaktformular {
+        width: 100%;
+        max-width: 600px; /* Breiter für bessere Optik */
+        background: #f9f9f9;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    /* Vor- und Nachname nebeneinander */
+    .vor-nachname {
+        display: flex;
+        gap: 20px;
+    }
+    
+    /* Labels über den Input-Feldern */
+    .vor-nachname label {
+        display: block;
+        margin-bottom: 3px;
+    }
+    
+    .vor-nachname input {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+    
+    /* Alle anderen Labels */
+    .kontaktformular label {
+        text-align: left;
+        display: block;
+        margin-bottom: 3px;
+    }
+    
+    /* Alle anderen Input-Felder & Textarea */
+    .kontaktformular input,
+    .kontaktformular textarea {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+    
+    .kontaktformular textarea {
+        resize: vertical;
+    }
+    
+    /* Button mittig & schmaler */
+    .kontaktformular button {
+        background: rgb(100, 93, 129);
+        color: white;
+        font-size: 16px;
+        padding: 10px 25px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+        width: 40%; /* Schmaler */
+        margin: 10px auto 0; /* Zentriert */
+        display: block;
+        text-align: center;
+    }
+    
+    .kontaktformular button:hover {
+        background: rgb(80, 73, 110);
+    }
+    
+    /* Kontaktinfos */
+    .kontakt-container div {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .kontakt-container a {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+        color: rgb(100, 93, 129);
+        font-weight: bold;
+    }
+    
+    .kontakt-container a img {
+        width: 24px;
+        height: 24px;
+    }
+    
+    
 
 
 
 
 /*RESPONSIVITÄT*/
+
+
+/*Allgemein*/
+
+@media(max-width: 768px) {
+    a{
+        -webkit-tap-highlight-color: transparent;
+    }
+
 
 /*Startseite*/
 
@@ -385,6 +518,7 @@ footer p {
 
     .mask {
         width: 50%;
+        padding-bottom: 30px;
     }
 
     .ueber-mich-button:active {
@@ -414,7 +548,7 @@ footer p {
 @media(max-width: 768px) {
     .uebermich-header {
         padding: 2rem 2rem 0 2rem;
-        flex-direction: column;
+        display:block;
         text-align: center;
     }
 
