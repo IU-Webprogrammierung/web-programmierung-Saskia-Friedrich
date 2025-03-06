@@ -301,12 +301,12 @@ footer p {
     display: flex;
     flex-direction: column;
     padding: 1% 0;
-    margin: 0 5%;
 }
 
 .projekte-container h1{
     color: rgb(100, 93, 129);
     padding: 1% 0;
+    text-align: center;
 }
 
 .projekte-container img{
@@ -362,130 +362,100 @@ footer p {
     text-decoration: none;
 }
 
-/*KONTAKT
-.kontakt-container{
+/*KONTAKT*/
+
+.kontakt-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1% 0;
-    margin: 0 5%;
-    color: rgb(100, 93, 129);}
+    padding: 2% 5%;
+    color: rgb(100, 93, 129);
+    text-align: center;
+}
 
-.kontaktformular{
-    padding: 2% 30%;
+.kontakt-container h1 {
+    margin-bottom: 20px;
+}
+
+.kontaktformular {
+    width: 100%;
+    max-width: 600px;
+    background: #f9f9f9;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     display: flex;
-    flex-direction: column;*/
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
 
+.vor-nachname {
+    display: flex;
+    gap: 50px;
+    width: 100%;
+}
 
-    .kontakt-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 2% 5%;
-        color: rgb(100, 93, 129);
-        text-align: center;
-    }
-    
-    .kontakt-container h1 {
-        margin-bottom: 20px;
-    }
-    
-    /* Breiteres Formular */
-    .kontaktformular {
-        width: 100%;
-        max-width: 600px; /* Breiter für bessere Optik */
-        background: #f9f9f9;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-    
-    /* Vor- und Nachname nebeneinander */
-    .vor-nachname {
-        display: flex;
-        gap: 20px;
-    }
-    
-    /* Labels über den Input-Feldern */
-    .vor-nachname label {
-        display: block;
-        margin-bottom: 3px;
-    }
-    
-    .vor-nachname input {
-        width: 100%;
-        padding: 8px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        font-size: 16px;
-    }
-    
-    /* Alle anderen Labels */
-    .kontaktformular label {
-        text-align: left;
-        display: block;
-        margin-bottom: 3px;
-    }
-    
-    /* Alle anderen Input-Felder & Textarea */
-    .kontaktformular input,
-    .kontaktformular textarea {
-        width: 100%;
-        padding: 8px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        font-size: 16px;
-    }
-    
-    .kontaktformular textarea {
-        resize: vertical;
-    }
-    
-    /* Button mittig & schmaler */
-    .kontaktformular button {
-        background: rgb(100, 93, 129);
-        color: white;
-        font-size: 16px;
-        padding: 10px 25px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background 0.3s ease;
-        width: 40%; /* Schmaler */
-        margin: 10px auto 0; /* Zentriert */
-        display: block;
-        text-align: center;
-    }
-    
-    .kontaktformular button:hover {
-        background: rgb(80, 73, 110);
-    }
-    
-    /* Kontaktinfos */
-    .kontakt-container div {
-        margin-top: 20px;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-    
-    .kontakt-container a {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        text-decoration: none;
-        color: rgb(100, 93, 129);
-        font-weight: bold;
-    }
-    
-    .kontakt-container a img {
-        width: 24px;
-        height: 24px;
-    }
-    
+.vor-nachname label {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 10px;
+}
+
+.kontaktformular label {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-weight: bold;
+    gap: 10px;
+}
+
+.kontaktformular input,
+.kontaktformular textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.kontaktformular textarea {
+    resize: vertical;
+}
+
+.kontaktformular button {
+    background: rgb(100, 93, 129);
+    color: white;
+    font-size: 16px;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 40%;
+    margin: 10px auto 0;
+    display: block;
+    text-align: center;
+}
+
+.kontaktformular button:hover {
+    background: rgb(80, 73, 110);
+}
+
+.kontakt-container a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: rgb(100, 93, 129);
+    font-weight: bold;
+}
+
+.kontakt-container a img {
+    width: 24px;
+    height: 24px;
+}
     
 
 
@@ -506,7 +476,7 @@ footer p {
 
 @media(max-width: 768px) {
     h1 {
-        font-size: 50px;
+        font-size: 45px;
         line-height: 55px;
     }
 
@@ -517,7 +487,7 @@ footer p {
     }
 
     .mask {
-        width: 50%;
+        width: 70%;
         padding-bottom: 30px;
     }
 
@@ -614,7 +584,28 @@ footer p {
 }
 
 
+/*Kontakt*/
 
+@media (max-width: 768px) {
+    .kontaktformular {
+        max-width: 70%;
+        padding: 20px 50px 20px 30px;
+    }
+
+    .kontakt-container h1 {
+        padding-top: 30px;
+    }
+
+    .vor-nachname {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .vor-nachname label {
+        width: 100%;
+    }
+}
 /*
 
 */
