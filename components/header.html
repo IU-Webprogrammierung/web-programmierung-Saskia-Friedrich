@@ -1,4 +1,4 @@
-<nav>
+<nav class="menu-leiste">
     <a href="index.html"><img class="logo" src="bilder/logo.png" width="50" alt="Saskia Friedrich Logo"></a>
 
     <ul class="navigation-bar">
@@ -29,3 +29,16 @@
 
     </section>
 </nav>
+
+<script>
+    $(document).ready(function() {
+        var currentPage = window.location.pathname.split("/").pop() || 'index.html';
+        $('.navigation-bar a').each(function() {
+            if ($(this).attr('href') === currentPage) {
+                $(this).addClass('active').attr('aria-current', 'page');
+            } else {
+                $(this).removeClass('active').removeAttr('aria-current');
+            }
+        });
+    });
+</script>
