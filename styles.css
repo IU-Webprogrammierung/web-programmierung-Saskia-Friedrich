@@ -1,4 +1,4 @@
-*{
+* {
     box-sizing: border-box;
 }
 
@@ -471,8 +471,8 @@ footer p {
 progress {
     appearance: none;
     width: 50%;
-    height: 8px; 
-    border-radius: 10px; 
+    height: 8px;
+    border-radius: 10px;
     background-color: #333;
     overflow: hidden;
 }
@@ -483,7 +483,7 @@ progress::-webkit-progress-bar {
 }
 
 progress::-webkit-progress-value {
-    background-color: rgb(220, 217, 235); 
+    background-color: rgb(220, 217, 235);
     border-radius: 10px;
 }
 
@@ -617,7 +617,7 @@ progress::-moz-progress-bar {
     }
 
     .kachel-zu-kontakt {
-        padding: 2
+        padding: 20% 5%;
     }
 
 }
