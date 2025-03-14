@@ -61,7 +61,7 @@
         transition: 0.5s;
     }
 
-    .burger-menu a:active {
+    .burger-menu .links-container a:active {
         color: rgb(100, 93, 129);
         background-color: white;
     }
