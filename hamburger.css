@@ -51,7 +51,6 @@
         justify-content: flex-start;
     }
 
-
     .burger-menu a {
         display: flex;
         align-items: center;
@@ -103,6 +102,4 @@
         padding: 0;
         margin: 0;
     }
-
-
 }
