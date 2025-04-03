@@ -10,6 +10,11 @@ body {
     padding-top: 90px;
 }
 
+::selection {
+    background: rgb(69, 63, 90);
+    color: white;
+}
+
 h1,
 h2,
 h3,
@@ -94,16 +99,16 @@ nav li a:hover {
     width: 40%;
     height: auto;
     background-color: #fdfaff;
-    background-image: url(bilder/mask-background-before.png); 
+    background-image: url(bilder/mask-background-before.png);
     background-size: contain;
     background-position: center;
-    transition: background-image 1s ease-in-out; 
+    transition: background-image 0.5s ease-in-out;
     position: relative;
 }
 
 .mask:hover {
-    background-image: url(bilder/mask-background-after.png); 
-    background-size: contain; 
+    background-image: url(bilder/mask-background-after.png);
+    background-size: contain;
 }
 
 .ueber-mich-button {
@@ -132,6 +137,7 @@ nav li a:hover {
         opacity: 0;
         transform: translateX(-50px);
     }
+
     to {
         opacity: 1;
         transform: translateX(0);
@@ -143,6 +149,7 @@ nav li a:hover {
         opacity: 0;
         transform: translateX(50px);
     }
+
     to {
         opacity: 1;
         transform: translateX(0);
@@ -155,7 +162,7 @@ nav li a:hover {
 
 .vorstellung-start {
     animation: fadeInRight 1s ease-out forwards;
-    opacity: 0; 
+    opacity: 0;
 }
 
 
@@ -184,10 +191,25 @@ nav li a:hover {
 }
 
 @keyframes fadeInOut {
-    0% { opacity: 0,5; transform: translateY(10px); }
-    30% { opacity: 1; transform: translateY(0); }
-    70% { opacity: 1; transform: translateY(0); }
-    100% { opacity: 1; transform: translateY(-10px); }
+    0% {
+        opacity: 0, 5;
+        transform: translateY(10px);
+    }
+
+    30% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    70% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(-10px);
+    }
 }
 
 
@@ -234,7 +256,7 @@ nav li a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(100, 93, 129, 0); /* Unsichtbar */
+    background: rgba(100, 93, 129, 0);
     transition: background 0.5s ease-in-out;
     z-index: 1;
 }
@@ -254,11 +276,13 @@ nav li a:hover {
 
 /* Hover-Effekt */
 .kachel:hover::after {
-    transform: scale(1.1); /* Zoom-Effekt */
+    transform: scale(1.1);
+    /* Zoom-Effekt */
 }
 
 .kachel:hover::before {
-    background: rgba(100, 93, 129, 0.5); /* Lila Overlay */
+    background: rgba(100, 93, 129, 0.5);
+    /* Lila Overlay */
 }
 
 .kachel:hover h3 {
@@ -318,7 +342,7 @@ footer a {
 
 footer a:hover {
     background-color: white;
-    color: rgb(100, 93, 129); 
+    color: rgb(100, 93, 129);
 }
 
 footer p {
@@ -344,7 +368,7 @@ footer p {
     background-color: rgb(100, 93, 129);
     color: white;
     display: flex;
-    align-items:center;
+    align-items: center;
     justify-content: center;
     column-gap: 1%;
     padding: 2% 5% 0 5%;
@@ -687,15 +711,17 @@ progress::-moz-progress-bar {
             background-size: 100%;
             transition: transform 0.5s ease-in-out;
         }
-    
+
         .kachel:active::after {
-            transform: scale(1.2); /* Zoom-Effekt bei Tap */
+            transform: scale(1.2);
+            /* Zoom-Effekt bei Tap */
         }
-    
+
         .kachel:active::before {
-            background: rgba(100, 93, 129, 0.5); /* Lila Overlay */
+            background: rgba(100, 93, 129, 0.5);
+            /* Lila Overlay */
         }
-    
+
         .kachel:active h3 {
             transform: translate(-50%, -50%) scale(1.1);
         }
