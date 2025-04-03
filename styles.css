@@ -95,7 +95,7 @@ nav li a:hover {
     height: auto;
     background-color: #fdfaff;
     background-image: url(bilder/mask-background-before.png); 
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     transition: background-image 1s ease-in-out; 
     position: relative;
@@ -149,6 +149,9 @@ nav li a:hover {
     }
 }
 
+.mask {
+    animation: fadeInLeft 1s ease-out;
+}
 
 .vorstellung-start {
     animation: fadeInRight 1s ease-out forwards;
@@ -214,11 +217,11 @@ nav li a:hover {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 140%;
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 110%;
+    background-size: 100%;
     transition: transform 0.5s ease-in-out;
     z-index: 0;
 }
@@ -244,7 +247,7 @@ nav li a:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     transition: transform 0.5s ease-in-out, font-size 0.5s ease-in-out;
     z-index: 2;
 }
