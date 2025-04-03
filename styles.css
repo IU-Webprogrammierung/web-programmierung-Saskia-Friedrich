@@ -370,8 +370,13 @@ footer p {
     color: white;
     display: flex;
     align-items: flex-end;
+    justify-content: center;
     column-gap: 1%;
     padding: 2% 5% 0 5%;
+}
+
+.uebermich-header .uebermich-abschnitt{
+    justify-content: flex-start;
 }
 
 .uebermich-header .portrait {
@@ -383,6 +388,7 @@ footer p {
 
 .uebermich-abschnitt {
     display: flex;
+
     flex-direction: column;
 }
 
