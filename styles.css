@@ -319,7 +319,7 @@ nav li a:hover {
 
 footer {
     background-color: #494949;
-    padding: 4rem;
+    padding: 2.2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -330,6 +330,7 @@ footer {
 
 .impressum-datenschutz a {
     padding: 5px 10px;
+    font-size:12pt;
 }
 
 footer a {
@@ -704,39 +705,44 @@ progress::-moz-progress-bar {
         flex-direction: column;
         align-items: normal;
     }
+}
 
-
-    @media (max-width: 800px) {
-        .kachel::after {
-            background-size: 100%;
-            transition: transform 0.5s ease-in-out;
-        }
-
-        .kachel:active::after {
-            transform: scale(1.2);
-            /* Zoom-Effekt bei Tap */
-        }
-
-        .kachel:active::before {
-            background: rgba(100, 93, 129, 0.5);
-            /* Lila Overlay */
-        }
-
-        .kachel:active h3 {
-            transform: translate(-50%, -50%) scale(1.1);
-        }
+@media (max-width: 800px) {
+    .kachel::after {
+        background-size: 100%;
+        transition: transform 0.5s ease-in-out;
     }
 
+    .kachel:active::after {
+        transform: scale(1.2);
+        /* Zoom-Effekt bei Tap */
+    }
+
+    .kachel:active::before {
+        background: rgba(100, 93, 129, 0.5);
+        /* Lila Overlay */
+    }
+
+    .kachel:active h3 {
+        transform: translate(-50%, -50%) scale(1.1);
+    }
+}
 
 
 
 
+
+@media (max-width: 800px) {
 
     footer {
         background-color: #494949;
         flex-direction: column;
         text-align: center;
         color: white;
+    }
+
+    .impressum-datenschutz a {
+        margin-bottom: 20px;
     }
 
 }
