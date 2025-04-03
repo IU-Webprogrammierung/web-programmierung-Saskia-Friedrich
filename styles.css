@@ -330,7 +330,7 @@ footer {
 
 .impressum-datenschutz a {
     padding: 5px 10px;
-    font-size:12pt;
+    font-size: 12pt;
 }
 
 footer a {
@@ -369,8 +369,7 @@ footer p {
     background-color: rgb(100, 93, 129);
     color: white;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-end;
     column-gap: 1%;
     padding: 2% 5% 0 5%;
 }
@@ -403,20 +402,19 @@ footer p {
     display: block;
 }
 
-
 .skills-block {
     max-width: 500px;
-    margin: 0 auto;
+    margin: 0;
 }
 
 .fortschritt {
     accent-color: rgb(234, 228, 255);
     margin-top: 8px;
-    width: 100%; 
-    height: 10px; 
-    background-color: #888888; 
+    width: 100%;
+    height: 10px;
+    background-color: #888888;
     border-radius: 5px;
-    overflow: hidden; 
+    overflow: hidden;
     position: relative;
 }
 
@@ -425,8 +423,8 @@ footer p {
     content: "";
     display: block;
     height: 100%;
-    width: 0%; 
-    background-color: rgb(234, 228, 255); 
+    width: 0%;
+    background-color: rgb(234, 228, 255);
     border-radius: 5px;
     animation: progressAnimation 2s ease-out forwards;
 }
@@ -436,8 +434,9 @@ footer p {
     from {
         width: 0%;
     }
+
     to {
-        width: 100%; 
+        width: 100%;
     }
 }
 
@@ -445,8 +444,9 @@ footer p {
     from {
         width: 0%;
     }
+
     to {
-        width: 100%; 
+        width: 100%;
     }
 }
 
@@ -454,8 +454,9 @@ footer p {
     from {
         width: 0%;
     }
+
     to {
-        width: 60%; 
+        width: 60%;
     }
 }
 
@@ -463,8 +464,9 @@ footer p {
     from {
         width: 0%;
     }
+
     to {
-        width: 40%; 
+        width: 40%;
     }
 }
 
@@ -484,10 +486,6 @@ footer p {
 #balken4::before {
     animation: progressAnimationBalken4 2s ease-out forwards;
 }
-
-}
-
-
 
 
 
@@ -719,30 +717,6 @@ footer p {
     padding-bottom: 20px;
 }
 
-progress {
-    appearance: none;
-    width: 50%;
-    height: 8px;
-    border-radius: 10px;
-    background-color: #333;
-    overflow: hidden;
-}
-
-progress::-webkit-progress-bar {
-    background-color: #333;
-    border-radius: 10px;
-}
-
-progress::-webkit-progress-value {
-    background-color: rgb(220, 217, 235);
-    border-radius: 10px;
-}
-
-progress::-moz-progress-bar {
-    background-color: rgb(220, 217, 235);
-    border-radius: 10px;
-}
-
 
 
 
@@ -796,26 +770,7 @@ progress::-moz-progress-bar {
     }
 }
 
-@media (max-width: 800px) {
-    .kachel::after {
-        background-size: 100%;
-        transition: transform 0.5s ease-in-out;
-    }
 
-    .kachel:active::after {
-        transform: scale(1.2);
-        /* Zoom-Effekt bei Tap */
-    }
-
-    .kachel:active::before {
-        background: rgba(100, 93, 129, 0.5);
-        /* Lila Overlay */
-    }
-
-    .kachel:active h3 {
-        transform: translate(-50%, -50%) scale(1.1);
-    }
-}
 
 
 
@@ -845,6 +800,11 @@ progress::-moz-progress-bar {
         padding: 2rem 2rem 0 2rem;
         display: block;
         text-align: center;
+    }
+
+    .skills-block {
+        max-width: 500px;
+        margin: 0 auto;
     }
 
     .skills-block li {
