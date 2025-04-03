@@ -142,19 +142,81 @@ nav li a:hover {
     flex: auto;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
     position: relative;
+    overflow: hidden;
 }
 
-#ueber-mich.kachel {
+
+/* Extra Wrapper für das Bild */
+.kachel::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 110%;
+    transition: transform 0.5s ease-in-out;
+    z-index: 0;
+}
+
+/* Overlay */
+.kachel::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(100, 93, 129, 0); /* Unsichtbar */
+    transition: background 0.5s ease-in-out;
+    z-index: 1;
+}
+
+/* Schrift */
+.kachel h3 {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.5rem;
+    transition: transform 0.5s ease-in-out, font-size 0.5s ease-in-out;
+    z-index: 2;
+}
+
+/* Hover-Effekt */
+.kachel:hover::after {
+    transform: scale(1.1); /* Zoom-Effekt */
+}
+
+.kachel:hover::before {
+    background: rgba(100, 93, 129, 0.5); /* Lila Overlay */
+}
+
+.kachel:hover h3 {
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+
+
+
+
+
+/* Setzt das korrekte Bild */
+#ueber-mich.kachel::after {
     background-image: url(bilder/uebermich-kachel.jpg);
 }
 
-#projekte.kachel {
+#projekte.kachel::after {
     background-image: url(bilder/projekte-kachel.jpg);
 }
 
-#kontakt.kachel {
+#kontakt.kachel::after {
     background-image: url(bilder/kontakt-kachel.jpg);
 }
 
