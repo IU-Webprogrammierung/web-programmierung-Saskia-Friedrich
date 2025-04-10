@@ -314,50 +314,6 @@ nav li a:hover {
 
 
 
-/*FOOTER*/
-
-
-footer {
-    background-color: #494949;
-    padding: 2.2rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-    row-gap: 30px;
-    color: white;
-}
-
-.impressum-datenschutz a {
-    padding: 5px 10px;
-    font-size: 12pt;
-}
-
-footer a {
-    color: white;
-    text-decoration: none;
-    padding: 5px 10px;
-    border-radius: 15px;
-    transition: all 0.3s ease-in-out;
-}
-
-footer a:hover {
-    background-color: white;
-    color: rgb(100, 93, 129);
-}
-
-footer p {
-    margin: 0;
-}
-
-.instagram-mit-icon {
-    font-weight: bold;
-}
-
-.instagram-mit-icon img {
-    vertical-align: text-bottom;
-}
-
 
 
 
@@ -375,8 +331,9 @@ footer p {
     padding: 2% 5% 0 5%;
 }
 
-.uebermich-header .uebermich-abschnitt{
+.uebermich-header .uebermich-abschnitt {
     justify-content: flex-start;
+    padding: 50px;
 }
 
 .uebermich-header .portrait {
@@ -504,11 +461,24 @@ footer p {
 .timeline-area {
     margin: 60px auto;
     width: 50%;
-    border-left: 2px solid rgb(100, 93, 129);
-    padding: 0 20px 0 30px;
+    position: relative;
     color: rgb(100, 93, 129);
+    padding: 0 20px 0 30px;
 }
 
+/* Die animierte Linie als Pseudo-Element */
+.timeline-area::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 0;
+    background-color: rgb(100, 93, 129);
+    animation: growLine 2s ease-out forwards;
+}
+
+/* Die Punkte und Inhalt */
 .timeline-item {
     padding: 20px 20px;
     position: relative;
@@ -524,9 +494,24 @@ footer p {
     border: 3px solid rgb(100, 93, 129);
     position: absolute;
     top: 29px;
-    left: -39px;
-
+    left: -37px;
 }
+
+/* Animation */
+@keyframes growLine {
+    from {
+        height: 0;
+    }
+    to {
+        height: 100%;
+    }
+}
+
+
+
+
+
+
 
 .kachel-zu-projekte {
     color: white;
@@ -534,16 +519,41 @@ footer p {
     flex: auto;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
     position: relative;
+    overflow: hidden;
+}
+
+/* Hintergrundbild via ::after */
+.kachel-zu-projekte::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 140%;
+    height: 100%;
     background-image: url(bilder/projekte-kachel.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transition: transform 0.5s ease-in-out;
+    z-index: 0;
 }
 
-.kachel-zu-projekte a {
-    color: white;
-    text-decoration: none;
+/* Lila Overlay */
+.kachel-zu-projekte::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(100, 93, 129, 0);
+    transition: background 0.5s ease-in-out;
+    z-index: 1;
 }
 
+/* Text */
 .kachel-zu-projekte h3 {
     text-align: center;
     position: absolute;
@@ -551,7 +561,25 @@ footer p {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+    font-size: 1.4rem;
+    transition: transform 0.5s ease-in-out, font-size 0.5s ease-in-out;
+    z-index: 2;
 }
+
+/* Hover-Zoom */
+.kachel-zu-projekte:hover::after {
+    transform: scale(1.1);
+}
+
+.kachel-zu-projekte:hover::before {
+    background: rgba(100, 93, 129, 0.5);
+}
+
+.kachel-zu-projekte:hover h3 {
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+
 
 
 
@@ -608,22 +636,89 @@ footer p {
     font-weight: bold;
 }
 
+
 .kachel-zu-kontakt {
     color: white;
     padding: 10rem 5rem;
-    text-align: center;
     flex: auto;
+    position: relative;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
     background-image: url(bilder/kontakt-kachel.jpg);
-}
-
-.kachel-zu-kontakt a {
-    color: white;
+    overflow: hidden;
+  }
+  
+  .kachel-zu-kontakt a {
     text-decoration: none;
-}
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .kachel-zu-kontakt h3,
+  .kachel-zu-kontakt h4 {
+    transition: transform 0.5s ease-in-out, font-size 0.5s ease-in-out;
+    z-index: 2;
+    text-align: center;
+    margin: 0.5rem 0;
+  }
+  
+  /* Zoom bei Hover */
+  .kachel-zu-kontakt:hover h3,
+  .kachel-zu-kontakt:hover h4 {
+    transform: scale(1.1);
+  }
+  
+  /* Hintergrund-Zoom */
+  .kachel-zu-kontakt::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 140%;
+    height: 100%;
+    background-image: url(bilder/kontakt-kachel.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transition: transform 0.5s ease-in-out;
+    z-index: 0;
+  }
+  
+  .kachel-zu-kontakt:hover::after {
+    transform: scale(1.1);
+  }
+  
+  /* Overlay */
+  .kachel-zu-kontakt::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(100, 93, 129, 0);
+    transition: background 0.5s ease-in-out;
+    z-index: 1;
+  }
+  
+  .kachel-zu-kontakt:hover::before {
+    background: rgba(100, 93, 129, 0.5);
+  }
+  
+
+
+
+
+
+
+
 
 /*KONTAKT*/
 
@@ -724,8 +819,49 @@ footer p {
 }
 
 
+/*FOOTER*/
 
 
+footer {
+    background-color: #494949;
+    padding: 2.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    row-gap: 30px;
+    color: white;
+}
+
+.impressum-datenschutz a {
+    padding: 5px 10px;
+    font-size: 12pt;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+footer a:hover {
+    background-color: white;
+    color: rgb(100, 93, 129);
+}
+
+footer p {
+    margin: 0;
+}
+
+.instagram-mit-icon {
+    font-weight: bold;
+}
+
+.instagram-mit-icon img {
+    vertical-align: text-bottom;
+}
 
 
 
@@ -806,6 +942,10 @@ footer p {
         padding: 2rem 2rem 0 2rem;
         display: block;
         text-align: center;
+    }
+
+    .uebermich-header .uebermich-abschnitt {
+        padding: 0;
     }
 
     .skills-block {
