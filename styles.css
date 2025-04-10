@@ -502,6 +502,7 @@ nav li a:hover {
     from {
         height: 0;
     }
+
     to {
         height: 100%;
     }
@@ -647,9 +648,9 @@ nav li a:hover {
     background-size: cover;
     background-image: url(bilder/kontakt-kachel.jpg);
     overflow: hidden;
-  }
-  
-  .kachel-zu-kontakt a {
+}
+
+.kachel-zu-kontakt a {
     text-decoration: none;
     color: white;
     display: flex;
@@ -659,24 +660,24 @@ nav li a:hover {
     height: 100%;
     position: relative;
     z-index: 2;
-  }
-  
-  .kachel-zu-kontakt h3,
-  .kachel-zu-kontakt h4 {
+}
+
+.kachel-zu-kontakt h3,
+.kachel-zu-kontakt h4 {
     transition: transform 0.5s ease-in-out, font-size 0.5s ease-in-out;
     z-index: 2;
     text-align: center;
     margin: 0.5rem 0;
-  }
-  
-  /* Zoom bei Hover */
-  .kachel-zu-kontakt:hover h3,
-  .kachel-zu-kontakt:hover h4 {
+}
+
+/* Zoom bei Hover */
+.kachel-zu-kontakt:hover h3,
+.kachel-zu-kontakt:hover h4 {
     transform: scale(1.1);
-  }
-  
-  /* Hintergrund-Zoom */
-  .kachel-zu-kontakt::after {
+}
+
+/* Hintergrund-Zoom */
+.kachel-zu-kontakt::after {
     content: "";
     position: absolute;
     top: 0;
@@ -689,14 +690,14 @@ nav li a:hover {
     background-size: 100%;
     transition: transform 0.5s ease-in-out;
     z-index: 0;
-  }
-  
-  .kachel-zu-kontakt:hover::after {
+}
+
+.kachel-zu-kontakt:hover::after {
     transform: scale(1.1);
-  }
-  
-  /* Overlay */
-  .kachel-zu-kontakt::before {
+}
+
+/* Overlay */
+.kachel-zu-kontakt::before {
     content: "";
     position: absolute;
     top: 0;
@@ -706,13 +707,17 @@ nav li a:hover {
     background: rgba(100, 93, 129, 0);
     transition: background 0.5s ease-in-out;
     z-index: 1;
-  }
-  
-  .kachel-zu-kontakt:hover::before {
-    background: rgba(100, 93, 129, 0.5);
-  }
-  
+}
 
+.kachel-zu-kontakt:hover::before {
+    background: rgba(100, 93, 129, 0.5);
+}
+
+.kontaktformular input:focus,
+.kontaktformular textarea:focus {
+    border: 3px solid #c9aed1;
+    outline: none;
+}
 
 
 
@@ -986,7 +991,7 @@ footer p {
 
     .projekte-container img {
         display: block;
-        margin: 22px auto 0 auto;
+        margin: 5% auto 0 auto;
         height: 90%;
         width: 90%;
         object-fit: cover;
